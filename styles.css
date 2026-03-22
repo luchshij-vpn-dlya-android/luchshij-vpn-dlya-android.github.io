@@ -1,127 +1,127 @@
 :root {
-  /* 1. Цветовая палитра — Благородный хвойный и угольный */
-  --primary: #164e63;       /* Глубокий сине-зеленый (Teal 900) */
-  --secondary: #475569;     /* Сланцевый серый */
-  --accent: #059669;        /* Насыщенный изумрудный (цвет действия) */
+  /* 1. Цветовая палитра — Киберпанк-модерн */
+  --primary: #6366f1;       /* Индиго-неон (основной акцент) */
+  --secondary: #a855f7;     /* Насыщенный фиолетовый (второй акцент) */
+  --accent: #06b6d4;        /* Бирюзовый (цвет действия/сканирования) */
   
-  /* 2. Фон и Текст */
-  --bg-body: #fcfcfc;       /* Почти белый бумажный фон */
-  --bg-surface: #f1f5f1;    /* Легкий оливковый подтон для блоков */
-  --text-main: #0f172a;     /* Угольный черный */
-  --text-muted: #64748b;    
+  /* 2. Фон и Текст — Глубокий "Dark Mode" */
+  --bg-body: #0f172a;       /* Цвет темного ночного неба */
+  --bg-surface: #1e293b;    /* Цвет карточек и панелей */
+  --text-main: #f8fafc;     /* Почти белый для идеальной читаемости */
+  --text-muted: #94a3b8;    /* Приглушенный серо-голубой */
   
-  /* 3. Геометрия — Плавность и мягкость */
-  --border-width: 1px;      
-  --radius: 12px;           /* Округлые формы, вызывают больше доверия */
-  --gap: 40px;              
+  /* 3. Геометрия — Bento Style */
+  --border-width: 1px;      /* Тонкие, изящные границы */
+  --radius: 12px;           /* Современные скругления (Bento-стиль) */
+  --gap: 24px;              /* Плотная и аккуратная сетка */
   
   /* 4. Визуальные эффекты */
-  --grid-opacity: 0.04;
-  --noise-opacity: 0.02;
-  --blob-blur: 100px;       
+  --grid-opacity: 0.15;     /* Сетка стала более заметной, как в интерфейсах будущего */
+  --noise-opacity: 0.05;
+  --blob-blur: 160px;       /* Мягкие световые пятна на фоне */
 
-  --header-h: 72px;
+  --header-h: 80px;
 
   /* Состояния и Акценты */
-  --clr-pros: #059669;
-  --clr-pros-bg: #ecfdf5;
-  --clr-pros-text: #065f46;
+  --clr-pros: #22c55e;      /* Сочный зеленый */
+  --clr-pros-bg: rgba(34, 197, 94, 0.1);
+  --clr-pros-text: #4ade80;
   
-  --clr-cons: #e11d48;      /* Сдержанный малиново-красный */
-  --clr-cons-bg: #fff1f2;
-  --clr-cons-text: #9f1239;
+  --clr-cons: #f43f5e;      /* Яркий розово-красный */
+  --clr-cons-bg: rgba(244, 63, 94, 0.1);
+  --clr-cons-text: #fb7185;
 
-  --clr-warn-bg: #fffbeb;
-  --clr-warn-border: #d97706;
+  --clr-warn-bg: #2d2a1a;
+  --clr-warn-border: #eab308;
   
-  --clr-stars: #f59e0b;
-  --clr-note-bg: #f8fafc;
-  --clr-note-text: #334155;
+  --clr-stars: #f59e0b;     /* Золотистый янтарь */
+  --clr-note-bg: #1e1b4b;
+  --clr-note-text: #c7d2fe;
   --clr-white: #ffffff;
 
   /* Переменные для Таблицы */
-  --compare-bg: var(--clr-white);
-  --compare-head-bg: #f8fafc;
-  --compare-border: #e2e8f0;
-  --compare-zebra: #f9fafb;
-  --compare-hover: #f1f5f9;
+  --compare-bg: #1e293b;
+  --compare-head-bg: #334155;
+  --compare-border: #475569;
+  --compare-zebra: #1e293b;
+  --compare-hover: #334155;
   
   /* Ссылки и Акценты в таблице */
-  --compare-link: var(--primary);
-  --compare-link-hover: var(--accent);
-  --compare-favorite-bg: rgba(5, 150, 105, 0.03);
-  --compare-favorite-border: rgba(5, 150, 105, 0.1);
+  --compare-link: var(--accent);
+  --compare-link-hover: var(--primary);
+  --compare-favorite-bg: rgba(99, 102, 241, 0.1);
+  --compare-favorite-border: var(--primary);
   
   /* Сортировка */
-  --compare-sort-opacity: 0.4;
-  --compare-sort-active: var(--primary);
+  --compare-sort-opacity: 0.5;
+  --compare-sort-active: var(--accent);
 
-  /* Методология */
-  --m-card-bg: var(--clr-white);
-  --m-card-border: #e2e8f0;
-  --m-card-shadow: rgba(0, 0, 0, 0.04);
+  /* Методология — Стеклянные карточки (Glassmorphism) */
+  --m-card-bg: rgba(30, 41, 59, 0.7);
+  --m-card-border: #334155;
+  --m-card-shadow: rgba(0, 0, 0, 0.3);
   
-  /* Цвета тегов в критериях */
-  --tag-crit-bg: #f1f5f9;
-  --tag-crit-text: #475569;
-  --tag-perf-bg: #f1f5f9;
-  --tag-perf-text: #475569;
-  --tag-safe-bg: #f1f5f9;
-  --tag-safe-text: #475569;
-  --tag-warn-bg: #f1f5f9;
-  --tag-warn-text: #475569;
+  /* Цвета тегов в критериях — Неоновые акценты */
+  --tag-crit-bg: #450a0a;
+  --tag-crit-text: #fca5a5;
+  --tag-perf-bg: #1e1b4b;
+  --tag-perf-text: #a5b4fc;
+  --tag-safe-bg: #064e3b;
+  --tag-safe-text: #6ee7b7;
+  --tag-warn-bg: #451a03;
+  --tag-warn-text: #fdba74;
 
   /* Альтернативы */
-  --alt-card-bg: var(--clr-white);
-  --alt-card-border: #e2e8f0;
-  --alt-card-hover: #f1f5f9;
+  --alt-card-bg: #1e293b;
+  --alt-card-border: #334155;
+  --alt-card-hover: #334155;
 
   /* Экспертный блок */
-  --expert-bg: #f8fafc;
-  --expert-card-danger: #ffffff;
-  --expert-danger-border: #fca5a5;
-  --expert-danger-text: #991b1b;
+  --expert-bg: #1e293b;
+  --expert-card-danger: #450a0a;
+  --expert-danger-border: #991b1b;
+  --expert-danger-text: #fecaca;
   
-  --expert-ok-text: #059669;
-  --expert-bad-text: #dc2626;
+  --expert-ok-text: #4ade80;
+  --expert-bad-text: #f87171;
   
   --expert-btn-bg: var(--primary);
   --expert-btn-text: var(--clr-white);
 
   /* FAQ */
-  --faq-bg: var(--clr-white);
-  --faq-item-border: #f1f5f9;
-  --faq-item-bg-hover: #f8fafc;
+  --faq-bg: #1e293b;
+  --faq-item-border: #334155;
+  --faq-item-bg-hover: #334155;
   --faq-q-text: var(--text-main);
   --faq-a-text: var(--text-muted);
-  --faq-search-bg: #f1f5f9;
+  --faq-search-bg: #0f172a;
 
   /* Отзывы */
-  --rev-card-bg: var(--clr-white);
-  --rev-card-border: #e2e8f0;
+  --rev-card-bg: #1e293b;
+  --rev-card-border: #334155;
   --rev-name-color: var(--text-main);
   --rev-meta-color: var(--text-muted);
-  --rev-star-color: #f59e0b;
-  --rev-btn-bg: #f1f5f9;
+  --rev-star-color: var(--clr-stars);
+  --rev-btn-bg: #334155;
   --rev-btn-hover: var(--primary);
 
   /* Форма отзыва */
-  --leave-bg: var(--clr-white);
-  --leave-input-bg: #ffffff;
-  --leave-input-border: #cbd5e1;
-  --leave-side-bg: #f8fafc;
+  --leave-bg: #1e293b;
+  --leave-input-bg: #0f172a;
+  --leave-input-border: #334155;
+  --leave-side-bg: #0f172a;
   --leave-side-text: var(--text-muted);
 
   /* Футер */
-  --footer-bg: #1e293b;      /* Темно-серый футер для баланса */
-  --footer-border: #334155;
-  --footer-text: #94a3b8;
+  --footer-bg: #0f172a;
+  --footer-border: #1e293b;
+  --footer-text: var(--text-muted);
   --footer-link-hover: var(--accent);
-  --footer-bottom-bg: #0f172a;
+  --footer-bottom-bg: #020617;
 
-  /* Внутренний фон для аккордеонов */
-  --acc-content-bg: #fcfcfc; 
-  --acc-content-border: #f1f5f9; 
+  /* Внутренний фон для раскрывающихся списков */
+  --acc-content-bg: #1e293b; 
+  --acc-content-border: #334155; 
 }
 
 /* Базовый сброс */
